@@ -37,9 +37,17 @@ function initNavbar() {
     });
 
     // Mobile menu toggle
-    navToggle.addEventListener('click', () => {
+    const toggleMenu = () => {
         navToggle.classList.toggle('active');
         navMenu.classList.toggle('active');
+    };
+
+    navToggle.addEventListener('click', toggleMenu);
+    navToggle.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            toggleMenu();
+        }
     });
 
     // Close mobile menu when clicking a link
@@ -74,11 +82,10 @@ function initNavbar() {
 function initTypingEffect() {
     const typingElement = document.querySelector('.typing-text');
     const phrases = [
-        'AI Developer',
-        'Machine Learning Engineer',
-        'LLM Specialist',
-        'Deep Learning Enthusiast',
-        'RAG Systems Expert'
+        'Generative AI Builder',
+        'RAG Systems Engineer',
+        'Computer Vision Researcher',
+        'Reinforcement Learning Practitioner'
     ];
     let phraseIndex = 0;
     let charIndex = 0;
@@ -173,8 +180,9 @@ function initCounterAnimation() {
     const counterObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                const target = parseInt(entry.target.dataset.target);
-                animateCounter(entry.target, target);
+                const target = Number(entry.target.dataset.target);
+                const decimals = Number(entry.target.dataset.decimals || 0);
+                animateCounter(entry.target, target, decimals);
                 counterObserver.unobserve(entry.target);
             }
         });
@@ -186,7 +194,7 @@ function initCounterAnimation() {
         counterObserver.observe(counter);
     });
 
-    function animateCounter(element, target) {
+    function animateCounter(element, target, decimals) {
         let current = 0;
         const increment = target / 50;
         const duration = 2000;
@@ -195,10 +203,10 @@ function initCounterAnimation() {
         const timer = setInterval(() => {
             current += increment;
             if (current >= target) {
-                element.textContent = target;
+                element.textContent = target.toFixed(decimals);
                 clearInterval(timer);
             } else {
-                element.textContent = Math.floor(current);
+                element.textContent = current.toFixed(decimals);
             }
         }, stepTime);
     }

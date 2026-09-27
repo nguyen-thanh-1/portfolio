@@ -3,587 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nguyen Thien Thanh - AI Developer & Machine Learning Engineer. Specializing in LLMs, RAG Systems, and Deep Learning.">
-    <meta name="keywords" content="AI Developer, Machine Learning, Deep Learning, LLM, RAG, Python, Portfolio">
+    <meta name="description" content="Nguyễn Thiện Thanh - AI Engineer tập trung vào Generative AI, RAG, Reinforcement Learning, Diffusion Models và Computer Vision.">
+    <meta name="keywords" content="Nguyen Thien Thanh, AI Engineer, Generative AI, RAG, Reinforcement Learning, Diffusion Models, Computer Vision">
     <meta name="author" content="Nguyen Thien Thanh">
-    <title>Nguyen Thien Thanh | AI Developer</title>
+    <title>Nguyễn Thiện Thanh | AI Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Animated Background -->
-    <div class="bg-animation">
+    <div class="bg-animation" aria-hidden="true">
         <div class="aura aura-1"></div>
         <div class="aura aura-2"></div>
         <div class="aura aura-3"></div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Điều hướng chính">
         <div class="nav-container">
-            <a href="#" class="nav-logo">
-                <span class="logo-text">TT</span>
-            </a>
+            <a href="#home" class="nav-logo" aria-label="Về đầu trang"><span class="logo-text">NTT</span></a>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#about" class="nav-link">Profile</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="nav-toggle" id="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="nav-toggle" id="nav-toggle" aria-label="Mở menu" role="button" tabindex="0">
+                <span></span><span></span><span></span>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <p class="hero-greeting reveal-text">Xin chào, tôi là</p>
-                    <h1 class="hero-title reveal-text">
-                        <span class="name-highlight">Nguyễn Thiện Thanh</span>
-                    </h1>
-                    <h2 class="hero-subtitle reveal-text">
-                        <span class="typing-text"></span>
-                        <span class="cursor">|</span>
-                    </h2>
-                    <p class="hero-description reveal-text">
-                        Đam mê xây dựng các hệ thống AI thông minh, từ Large Language Models 
-                        đến các giải pháp RAG và Deep Learning. Biến ý tưởng thành hiện thực 
-                        với code sạch và kiến trúc tối ưu.
-                    </p>
-                    <div class="hero-buttons reveal-text">
-                        <a href="#projects" class="btn btn-primary">
-                            <span>Xem Dự Án</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                        </a>
-                        <a href="#contact" class="btn btn-secondary">
-                            <span>Liên Hệ</span>
-                        </a>
-                    </div>
-                    <div class="hero-stats reveal-text">
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="10">0</span>
-                            <span class="stat-suffix">+</span>
-                            <span class="stat-label">Dự Án</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="5">0</span>
-                            <span class="stat-suffix">+</span>
-                            <span class="stat-label">Công Nghệ</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="2">0</span>
-                            <span class="stat-suffix">+</span>
-                            <span class="stat-label">Năm KN</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-image reveal-image">
-                    <div class="image-wrapper">
-                        <div class="image-glow"></div>
-                        <div class="image-border"></div>
-                        <img src="image/Nguyen_Thien_Thanh.jpeg" alt="Nguyen Thien Thanh" class="profile-img">
-                    </div>
-                    <div class="floating-badges">
-                        <div class="badge badge-1">
-                            <span class="badge-icon">🤖</span>
-                            <span class="badge-text">AI</span>
-                        </div>
-                        <div class="badge badge-2">
-                            <span class="badge-icon">🐍</span>
-                            <span class="badge-text">Python</span>
-                        </div>
-                        <div class="badge badge-3">
-                            <span class="badge-icon">🧠</span>
-                            <span class="badge-text">ML</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="scroll-indicator">
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
-                <span>Cuộn xuống</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Giới Thiệu</span>
-                <h2 class="section-title">Về Tôi</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="about-content">
-                <div class="about-card glass-card reveal-left">
-                    <div class="about-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                            <path d="M2 17l10 5 10-5"/>
-                            <path d="M2 12l10 5 10-5"/>
-                        </svg>
-                    </div>
-                    <h3>AI Developer</h3>
-                    <p>
-                        Tôi là một lập trình viên AI với niềm đam mê mãnh liệt trong việc 
-                        phát triển các hệ thống trí tuệ nhân tạo. Chuyên môn của tôi bao gồm 
-                        Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), 
-                        và các ứng dụng Deep Learning.
-                    </p>
-                </div>
-                <div class="about-card glass-card reveal-up">
-                    <div class="about-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                            <line x1="8" y1="21" x2="16" y2="21"/>
-                            <line x1="12" y1="17" x2="12" y2="21"/>
-                        </svg>
-                    </div>
-                    <h3>Kỹ Năng Đa Dạng</h3>
-                    <p>
-                        Từ Python và PyTorch đến các framework như LangChain và Transformers, 
-                        tôi không ngừng học hỏi và ứng dụng các công nghệ tiên tiến nhất 
-                        để tạo ra những sản phẩm AI chất lượng cao.
-                    </p>
-                </div>
-                <div class="about-card glass-card reveal-right">
-                    <div class="about-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M12 2v20M2 12h20"/>
-                            <circle cx="12" cy="12" r="10"/>
-                        </svg>
-                    </div>
-                    <h3>Giải Pháp Sáng Tạo</h3>
-                    <p>
-                        Tôi tin rằng AI không chỉ là công nghệ mà còn là nghệ thuật. 
-                        Mỗi dự án là một cơ hội để sáng tạo, tối ưu hóa và mang lại 
-                        giá trị thực sự cho người dùng.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Chuyên Môn</span>
-                <h2 class="section-title">Kỹ Năng</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="skills-content">
-                <div class="skills-category reveal-up">
-                    <h3 class="category-title">
-                        <span class="category-icon">💻</span>
-                        Programming Languages
-                    </h3>
-                    <div class="skills-grid">
-                        <div class="skill-item glass-card">
-                            <div class="skill-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-                            </div>
-                            <span class="skill-name">Python</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="95"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item glass-card">
-                            <div class="skill-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-                            </div>
-                            <span class="skill-name">JavaScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item glass-card">
-                            <div class="skill-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
-                            </div>
-                            <span class="skill-name">C++</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="60"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills-category reveal-up">
-                    <h3 class="category-title">
-                        <span class="category-icon">🤖</span>
-                        AI & Machine Learning
-                    </h3>
-                    <div class="skills-grid">
-                        <div class="skill-item glass-card">
-                            <div class="skill-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch">
-                            </div>
-                            <span class="skill-name">PyTorch</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item glass-card">
-                            <div class="skill-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
-                            </div>
-                            <span class="skill-name">TensorFlow</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="70"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item glass-card">
-                            <div class="skill-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor" class="custom-icon">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                </svg>
-                            </div>
-                            <span class="skill-name">LangChain</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item glass-card">
-                            <div class="skill-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor" class="custom-icon">
-                                    <path d="M21 16.5c0-.38-.21-.71-.53-.88l-7.9-4.44c-.36-.2-.8-.2-1.14 0l-7.9 4.44c-.32.17-.53.5-.53.88v.94c0 .38.21.71.53.88l7.9 4.44c.36.2.8.2 1.14 0l7.9-4.44c.32-.17.53-.5.53-.88v-.94z"/>
-                                </svg>
-                            </div>
-                            <span class="skill-name">Transformers</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="88"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills-category reveal-up">
-                    <h3 class="category-title">
-                        <span class="category-icon">🛠️</span>
-                        Tools & Frameworks
-                    </h3>
-                    <div class="skills-grid">
-                        <div class="skill-item glass-card">
-                            <div class="skill-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
-                            </div>
-                            <span class="skill-name">Docker</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item glass-card">
-                            <div class="skill-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-                            </div>
-                            <span class="skill-name">Git</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item glass-card">
-                            <div class="skill-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor" class="custom-icon streamlit">
-                                    <path d="M12 2L2 19h20L12 2z"/>
-                                </svg>
-                            </div>
-                            <span class="skill-name">Streamlit</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item glass-card">
-                            <div class="skill-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI">
-                            </div>
-                            <span class="skill-name">FastAPI</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Portfolio</span>
-                <h2 class="section-title">Dự Án</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card glass-card reveal-up">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" title="View Demo">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                        <polyline points="15 3 21 3 21 9"/>
-                                        <line x1="10" y1="14" x2="21" y2="3"/>
-                                    </svg>
-                                </a>
-                                <a href="#" class="project-link" title="View Code">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-placeholder">
-                            <span class="project-emoji">🤖</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">RAG Chatbot System</h3>
-                        <p class="project-description">
-                            Hệ thống chatbot thông minh sử dụng Retrieval-Augmented Generation 
-                            với Qwen2.5 và LightRAG để trả lời câu hỏi dựa trên tài liệu.
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <p class="hero-greeting reveal-text">AI ENGINEER · FINAL-YEAR STUDENT</p>
+                        <h1 class="hero-title reveal-text"><span class="name-highlight">Nguyễn Thiện Thanh</span></h1>
+                        <h2 class="hero-subtitle reveal-text"><span class="typing-text"></span><span class="cursor" aria-hidden="true">|</span></h2>
+                        <p class="hero-description reveal-text">
+                            Sinh viên năm cuối ngành Kỹ thuật Trí tuệ nhân tạo tại FPT University, tập trung vào
+                            Generative AI, RAG, multi-agent systems và computer vision. Tôi biến nghiên cứu thành
+                            những hệ thống có thể triển khai - từ kiến trúc, huấn luyện đến đánh giá.
                         </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">LangChain</span>
-                            <span class="tech-tag">Qwen2.5</span>
-                            <span class="tech-tag">Streamlit</span>
+                        <div class="hero-buttons reveal-text">
+                            <a href="#projects" class="btn btn-primary"><span>Xem dự án</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                            <a href="CV/no%20image/Nguyen%20Thien%20Thanh_CV.pdf" class="btn btn-secondary" target="_blank" rel="noopener"><span>Tải CV</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg></a>
+                        </div>
+                        <div class="hero-stats reveal-text" aria-label="Một số điểm nổi bật">
+                            <div class="stat-item"><span class="stat-number" data-target="2">0</span><span class="stat-suffix">+</span><span class="stat-label">Dự án cốt lõi</span></div>
+                            <div class="stat-item"><span class="stat-number" data-target="3">0</span><span class="stat-suffix"></span><span class="stat-label">Thuật toán RL tự xây dựng</span></div>
+                            <div class="stat-item"><span class="stat-number" data-target="97.97" data-decimals="2">0</span><span class="stat-suffix">%</span><span class="stat-label">Face verification accuracy</span></div>
+                        </div>
+                    </div>
+                    <div class="hero-image reveal-image">
+                        <div class="image-wrapper"><div class="image-glow"></div><div class="image-border"></div><img src="image/Nguyen_Thien_Thanh.jpeg" alt="Chân dung Nguyễn Thiện Thanh" class="profile-img"></div>
+                        <div class="floating-badges" aria-hidden="true">
+                            <div class="badge badge-1"><span class="badge-icon">✦</span><span class="badge-text">Generative AI</span></div>
+                            <div class="badge badge-2"><span class="badge-icon">⌘</span><span class="badge-text">RAG Systems</span></div>
+                            <div class="badge badge-3"><span class="badge-icon">◉</span><span class="badge-text">Computer Vision</span></div>
                         </div>
                     </div>
                 </div>
-                <div class="project-card glass-card reveal-up">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" title="View Demo">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                        <polyline points="15 3 21 3 21 9"/>
-                                        <line x1="10" y1="14" x2="21" y2="3"/>
-                                    </svg>
-                                </a>
-                                <a href="#" class="project-link" title="View Code">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-placeholder">
-                            <span class="project-emoji">🎨</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">AI Image Generation</h3>
-                        <p class="project-description">
-                            Ứng dụng tạo ảnh AI sử dụng Stable Diffusion với khả năng 
-                            virtual try-on và IP-Adapter cho kết quả chân thực.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Diffusion</span>
-                            <span class="tech-tag">ComfyUI</span>
-                            <span class="tech-tag">PyTorch</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card glass-card reveal-up">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" title="View Demo">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                        <polyline points="15 3 21 3 21 9"/>
-                                        <line x1="10" y1="14" x2="21" y2="3"/>
-                                    </svg>
-                                </a>
-                                <a href="#" class="project-link" title="View Code">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-placeholder">
-                            <span class="project-emoji">📚</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">Education AI Assistant</h3>
-                        <p class="project-description">
-                            Hệ thống AI hỗ trợ giáo dục với khả năng giải đáp câu hỏi 
-                            Toán, Lý, Hóa, Anh sử dụng Llama 3.1 8B.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Llama 3.1</span>
-                            <span class="tech-tag">Streamlit</span>
-                            <span class="tech-tag">NLP</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card glass-card reveal-up">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" title="View Demo">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                        <polyline points="15 3 21 3 21 9"/>
-                                        <line x1="10" y1="14" x2="21" y2="3"/>
-                                    </svg>
-                                </a>
-                                <a href="https://github.com/nguyen-thanh-1/ChatBot_Wisdom" class="project-link" title="View Code">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-placeholder">
-                            <span class="project-emoji">💬</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">ChatBot Wisdom</h3>
-                        <p class="project-description">
-                            Multi-agent chatbot system với khả năng tạo ảnh, 
-                            memory management và tích hợp Gemini API.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Gemini API</span>
-                            <span class="tech-tag">Multi-Agent</span>
-                            <span class="tech-tag">Streamlit</span>
-                        </div>
-                    </div>
-                </div>
+                <div class="scroll-indicator" aria-hidden="true"><div class="mouse"><div class="wheel"></div></div><span>Cuộn xuống</span></div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Liên Hệ</span>
-                <h2 class="section-title">Kết Nối</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info reveal-left">
-                    <h3>Hãy cùng tạo nên điều tuyệt vời!</h3>
-                    <p>
-                        Tôi luôn sẵn sàng lắng nghe về các dự án mới, cơ hội hợp tác 
-                        hoặc đơn giản là một cuộc trò chuyện về AI và công nghệ.
-                    </p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                    <polyline points="22,6 12,13 2,6"/>
-                                </svg>
-                            </div>
-                            <div class="contact-text">
-                                <span class="contact-label">Email</span>
-                                <a href="mailto:nguyenthienthanh@email.com">nguyenthienthanh@email.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                    <circle cx="12" cy="10" r="3"/>
-                                </svg>
-                            </div>
-                            <div class="contact-text">
-                                <span class="contact-label">Địa điểm</span>
-                                <span>Việt Nam</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/nguyen-thanh-1" class="social-link" title="GitHub" target="_blank">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </a>
-                        <a href="https://linkedin.com" class="social-link" title="LinkedIn" target="_blank">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                        </a>
-                        <a href="https://facebook.com" class="social-link" title="Facebook" target="_blank">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="contact-form-wrapper reveal-right">
-                    <form class="contact-form glass-card" id="contact-form">
-                        <div class="form-group">
-                            <label for="name">Họ và tên</label>
-                            <input type="text" id="name" name="name" required placeholder="Nhập họ và tên của bạn">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required placeholder="Nhập email của bạn">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Chủ đề</label>
-                            <input type="text" id="subject" name="subject" required placeholder="Chủ đề tin nhắn">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Tin nhắn</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Viết tin nhắn của bạn..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-submit">
-                            <span>Gửi Tin Nhắn</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="22" y1="2" x2="11" y2="13"/>
-                                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
-                            </svg>
-                        </button>
-                    </form>
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header"><span class="section-tag">Profile</span><h2 class="section-title">Tôi xây AI có thể dùng được</h2><div class="section-line"></div></div>
+                <div class="about-content">
+                    <article class="about-card glass-card reveal-left">
+                        <div class="about-icon" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m12 2-10 5 10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></div>
+                        <h3>Applied AI</h3><p>Thiết kế pipeline RAG cho bài toán phân tích tài chính, tối ưu routing, indexing, semantic cache và guardrails cho LLM.</p>
+                    </article>
+                    <article class="about-card glass-card reveal-up">
+                        <div class="about-icon" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+                        <h3>Research-minded</h3><p>First author của nghiên cứu Tiny-Diffusion, giảm 74% số tham số và 51% thời gian huấn luyện so với baseline.</p>
+                    </article>
+                    <article class="about-card glass-card reveal-right">
+                        <div class="about-icon" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="m8 12 2.5 2.5L16 9"/></svg></div>
+                        <h3>End-to-end ownership</h3><p>Thoải mái đi từ problem framing, kiến trúc và training đến evaluation, documentation và định hướng triển khai.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <span class="logo-text">TT</span>
-                    <span class="footer-name">Nguyen Thien Thanh</span>
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-header"><span class="section-tag">Journey</span><h2 class="section-title">Kinh nghiệm & học vấn</h2><div class="section-line"></div></div>
+                <div class="experience-layout">
+                    <div class="timeline">
+                        <article class="timeline-item reveal-left"><div class="timeline-dot" aria-hidden="true"></div><div class="timeline-content glass-card">
+                            <div class="timeline-meta"><span class="timeline-period">02/2026 - 05/2026</span><span class="timeline-type">Team of 3</span></div>
+                            <h3 class="timeline-role">AI Engineer</h3><p class="timeline-company">AIC Lab · FPT University</p>
+                            <ul class="timeline-list"><li>Thiết kế query router để phân luồng câu hỏi giữa retrieval và direct LLM response cho pipeline phân tích tài chính dùng LLM 7B-9B.</li><li>Tự động hóa quy trình PDF extraction → chunking → embedding và xây semantic cache để giảm LLM calls, chi phí và latency.</li><li>Tích hợp input/output guardrails để kiểm soát các ràng buộc về compliance trong phản hồi.</li></ul>
+                        </div></article>
+                        <article class="timeline-item reveal-left"><div class="timeline-dot" aria-hidden="true"></div><div class="timeline-content glass-card">
+                            <div class="timeline-meta"><span class="timeline-period">05/2025 - 02/2026</span><span class="timeline-type">Research</span></div>
+                            <h3 class="timeline-role">AI Engineer Intern</h3><p class="timeline-company">Wisdom Company</p>
+                            <ul class="timeline-list"><li>Triển khai từ đầu 3 thuật toán Reinforcement Learning: Q-Learning, Policy Gradient và MDP-based planning bằng PyTorch/NumPy.</li><li>Xây dựng, kiểm thử các agent trên môi trường benchmark và đóng góp roadmap cho các giai đoạn training tiếp theo.</li></ul>
+                        </div></article>
+                    </div>
+                    <aside class="education-card glass-card reveal-right">
+                        <span class="card-eyebrow">Education</span><h3>Bachelor of Artificial Intelligence</h3><p class="education-school">FPT University · Ho Chi Minh City</p>
+                        <div class="education-details"><div><span>Thời gian</span><strong>2023 - 2027</strong></div><div><span>GPA hiện tại</span><strong>3.45 / 4.0</strong></div></div>
+                        <div class="honors-block"><span class="card-eyebrow">Recognition</span><ul class="honors-list"><li>Third Prize · University-level Science Research Competition · 12/2025</li><li>Honorable Student of Trimester · Spring, Summer & Fall 2025</li><li>VSTEP B1 · English proficiency</li></ul></div>
+                    </aside>
                 </div>
-                <p class="footer-text">
-                    Được thiết kế và phát triển với 💚 bởi Nguyen Thien Thanh
-                </p>
-                <p class="footer-copyright">
-                    © 2024 All Rights Reserved.
-                </p>
             </div>
-        </div>
-    </footer>
+        </section>
 
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header"><span class="section-tag">Selected work</span><h2 class="section-title">Dự án nổi bật</h2><div class="section-line"></div></div>
+                <div class="projects-grid">
+                    <article class="project-card glass-card reveal-up">
+                        <div class="project-image"><div class="project-placeholder project-diffusion"><span class="project-emoji">✦</span><span class="project-image-label">TINY-DIFFUSION</span></div><div class="project-overlay"><div class="project-links"><a href="https://github.com/nguyen-thanh-1/stable_diffusion_for_text-to-sketch" class="project-link" title="Mở mã nguồn trên GitHub" target="_blank" rel="noopener" aria-label="Mở mã nguồn trên GitHub"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a></div></div></div>
+                        <div class="project-info"><span class="project-kicker">Research project · First author</span><h3 class="project-title">Text-to-Sketch via Tiny-Diffusion</h3><p class="project-description">Framework text-to-image nhẹ cho sketch 128×128, sau đó upscale lên 512×512 bằng Swin2SR và kỹ thuật Canvas Isolation.</p><div class="project-metrics"><span class="metric"><strong>-74%</strong> params</span><span class="metric"><strong>-51%</strong> training time</span><span class="metric"><strong>25.8</strong> CLIPScore</span></div><div class="project-tech"><span class="tech-tag">PyTorch</span><span class="tech-tag">Diffusion</span><span class="tech-tag">CLIP</span><span class="tech-tag">Swin2SR</span></div></div>
+                    </article>
+                    <article class="project-card glass-card reveal-up">
+                        <div class="project-image"><div class="project-placeholder project-vision"><span class="project-emoji">◉</span><span class="project-image-label">FACE VERIFICATION</span></div></div>
+                        <div class="project-info"><span class="project-kicker">Computer vision · End-to-end</span><h3 class="project-title">Face Verification Module</h3><p class="project-description">Module xác thực khuôn mặt cho hệ thống điểm danh và anti-spoofing, dùng iResNet-50, ArcFace loss và face embeddings 512-D.</p><div class="project-metrics"><span class="metric"><strong>97.97%</strong> accuracy</span><span class="metric"><strong>99.28%</strong> precision</span><span class="metric"><strong>2.34%</strong> EER</span></div><div class="project-tech"><span class="tech-tag">PyTorch</span><span class="tech-tag">ArcFace</span><span class="tech-tag">iResNet-50</span><span class="tech-tag">Anti-spoofing</span></div></div>
+                    </article>
+                    <article class="project-card glass-card reveal-up">
+                        <div class="project-image"><div class="project-placeholder project-rag"><span class="project-emoji">⌘</span><span class="project-image-label">FINANCIAL RAG</span></div></div>
+                        <div class="project-info"><span class="project-kicker">AIC Lab · Team of 3</span><h3 class="project-title">Financial Analysis RAG Pipeline</h3><p class="project-description">Pipeline phân tích tài chính với LLM 7B-9B, kết hợp query routing, indexing tự động, semantic cache và guardrails.</p><div class="project-metrics"><span class="metric">Query router</span><span class="metric">Semantic cache</span><span class="metric">Dual guardrails</span></div><div class="project-tech"><span class="tech-tag">RAG</span><span class="tech-tag">LLM</span><span class="tech-tag">FastAPI</span><span class="tech-tag">Pydantic AI</span></div></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header"><span class="section-tag">Toolkit</span><h2 class="section-title">Công nghệ tôi sử dụng</h2><div class="section-line"></div></div>
+                <div class="skills-content">
+                    <div class="skills-category reveal-up"><h3 class="category-title"><span class="category-icon">✦</span> AI & Machine Learning</h3><div class="skills-grid">
+                        <div class="skill-item glass-card"><span class="skill-symbol">Py</span><span class="skill-name">PyTorch</span></div><div class="skill-item glass-card"><span class="skill-symbol">LLM</span><span class="skill-name">LLM / RAG</span></div><div class="skill-item glass-card"><span class="skill-symbol">DF</span><span class="skill-name">Diffusion Models</span></div><div class="skill-item glass-card"><span class="skill-symbol">TF</span><span class="skill-name">Transformers</span></div><div class="skill-item glass-card"><span class="skill-symbol">RL</span><span class="skill-name">Reinforcement Learning</span></div><div class="skill-item glass-card"><span class="skill-symbol">CV</span><span class="skill-name">Computer Vision</span></div><div class="skill-item glass-card"><span class="skill-symbol">ML</span><span class="skill-name">Scikit-learn</span></div>
+                    </div></div>
+                    <div class="skills-category reveal-up"><h3 class="category-title"><span class="category-icon">⌘</span> Backend & Engineering</h3><div class="skills-grid skills-grid-compact">
+                        <div class="skill-item glass-card"><span class="skill-symbol">API</span><span class="skill-name">FastAPI</span></div><div class="skill-item glass-card"><span class="skill-symbol">AI</span><span class="skill-name">Pydantic AI</span></div><div class="skill-item glass-card"><span class="skill-symbol">≋</span><span class="skill-name">LiteLLM</span></div><div class="skill-item glass-card"><span class="skill-symbol">Git</span><span class="skill-name">Git / GitHub</span></div>
+                    </div></div>
+                    <div class="skills-category reveal-up"><h3 class="category-title"><span class="category-icon">⌁</span> Languages & Tools</h3><div class="tag-cloud"><span class="skill-pill">Python · Advanced</span><span class="skill-pill">SQL · Basic</span><span class="skill-pill">NumPy</span><span class="skill-pill">UV</span><span class="skill-pill">TorchMetrics</span><span class="skill-pill">Matplotlib</span><span class="skill-pill">Technical Leadership</span><span class="skill-pill">Problem-solving</span><span class="skill-pill">Teamwork</span><span class="skill-pill">Self-learning</span></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header"><span class="section-tag">Let's connect</span><h2 class="section-title">Cùng xây điều có ích</h2><div class="section-line"></div></div>
+                <div class="contact-content">
+                    <div class="contact-info reveal-left"><h3>Bạn đang làm một bài toán AI thú vị?</h3><p>Tôi sẵn sàng trao đổi về cơ hội AI Engineering, research collaboration hoặc những sản phẩm biến mô hình thành trải nghiệm thực tế.</p>
+                        <div class="contact-details">
+                            <div class="contact-item"><div class="contact-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="contact-text"><span class="contact-label">Email</span><a href="mailto:ntthanh14052005@gmail.com">ntthanh14052005@gmail.com</a></div></div>
+                            <div class="contact-item"><div class="contact-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92z"/></svg></div><div class="contact-text"><span class="contact-label">Phone</span><a href="tel:+84908195957">(+84) 90 819 5957</a></div></div>
+                            <div class="contact-item"><div class="contact-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="contact-text"><span class="contact-label">Location</span><span>District 9, Ho Chi Minh City</span></div></div>
+                        </div>
+                        <div class="social-links"><a href="https://github.com/nguyen-thanh-1" class="social-link" title="GitHub" target="_blank" rel="noopener" aria-label="GitHub"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a><a href="https://linkedin.com/in/nguyenthienthanh1405" class="social-link" title="LinkedIn" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></div>
+                    </div>
+                    <div class="contact-form-wrapper reveal-right"><form class="contact-form glass-card" id="contact-form">
+                        <div class="form-group"><label for="name">Họ và tên</label><input type="text" id="name" name="name" required placeholder="Nhập họ và tên của bạn"></div>
+                        <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" required placeholder="Nhập email của bạn"></div>
+                        <div class="form-group"><label for="subject">Chủ đề</label><input type="text" id="subject" name="subject" required placeholder="Bạn muốn trao đổi về điều gì?"></div>
+                        <div class="form-group"><label for="message">Tin nhắn</label><textarea id="message" name="message" rows="5" required placeholder="Viết tin nhắn của bạn..."></textarea></div>
+                        <button type="submit" class="btn btn-primary btn-submit"><span>Gửi lời nhắn</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+                    </form></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"><div class="container"><div class="footer-content"><div class="footer-logo"><span class="logo-text">NTT</span><span class="footer-name">Nguyen Thien Thanh</span></div><p class="footer-text">AI Engineer · Generative AI · Computer Vision</p><p class="footer-copyright">© 2026 Nguyen Thien Thanh. Built with curiosity and code.</p></div></div></footer>
     <script src="script.js"></script>
 </body>
 </html>
