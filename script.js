@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initSkillBars();
     initCounterAnimation();
     initSmoothScroll();
-    initContactForm();
     initParallax();
 });
 
@@ -234,59 +233,6 @@ function initSmoothScroll() {
             }
         });
     });
-}
-
-/* ==========================================
-   CONTACT FORM
-   ========================================== */
-function initContactForm() {
-    const form = document.getElementById('contact-form');
-
-    if (form) {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            // Get form data
-            const formData = new FormData(form);
-            const data = Object.fromEntries(formData);
-
-            // Show success message (you can replace this with actual form submission)
-            const button = form.querySelector('.btn-submit');
-            const originalText = button.innerHTML;
-
-            button.innerHTML = `
-                <span>Đã gửi thành công!</span>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="20 6 9 17 4 12"/>
-                </svg>
-            `;
-            button.style.background = 'linear-gradient(135deg, #059669, #10b981)';
-
-            // Reset after 3 seconds
-            setTimeout(() => {
-                button.innerHTML = originalText;
-                button.style.background = '';
-                form.reset();
-            }, 3000);
-
-            // Log form data (replace with actual API call)
-            console.log('Form submitted:', data);
-        });
-
-        // Add focus animations to form inputs
-        const inputs = form.querySelectorAll('input, textarea');
-        inputs.forEach(input => {
-            input.addEventListener('focus', function() {
-                this.parentElement.classList.add('focused');
-            });
-
-            input.addEventListener('blur', function() {
-                if (!this.value) {
-                    this.parentElement.classList.remove('focused');
-                }
-            });
-        });
-    }
 }
 
 /* ==========================================
